@@ -54,12 +54,10 @@ h3{font-family:var(--title);font-weight:600;font-size:1.6rem;line-height:1.15;le
 .demo{background:var(--surface);border-radius:18px;padding:14px;position:relative}
 .demo-caption{font-size:.9rem;color:var(--muted);margin:10px 2px 0;display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
 .project p{margin:0 0 12px;max-width:38ch}
-.project .code-link{max-width:none}
-.code-link a{background:var(--mark);color:#121212;text-decoration:none;font-weight:600;padding:6px 10px;border-radius:4px;display:inline-block}
-.code-link a:hover{text-decoration:underline}
+a.code-link{color:var(--ink);font-style:italic;font-weight:400;font-size:inherit;text-decoration:none;background:var(--mark);padding:0 .15em;margin-left:.5em;display:inline-block}
+a.code-link:hover{opacity:.85;transform:none}
 .tags{list-style:none;padding:0;margin:14px 0 18px;display:flex;flex-wrap:wrap;gap:6px}
 .tags li{font-size:.875rem;padding:4px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
-.code-link{font-size:.98rem;margin-top:14px !important;overflow-wrap:anywhere}
 .chip-btn{min-height:44px;padding:0 16px;border-radius:999px;border:1.5px solid var(--ink);background:var(--ground);color:var(--ink);font:500 .95rem var(--display);cursor:pointer}
 
 /* Crystal */
