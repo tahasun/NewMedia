@@ -54,8 +54,9 @@ h3{font-family:var(--title);font-weight:600;font-size:1.6rem;line-height:1.15;le
 .demo{background:var(--surface);border-radius:18px;padding:14px;position:relative}
 .demo-caption{font-size:.9rem;color:var(--muted);margin:10px 2px 0;display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
 .project p{margin:0 0 12px;max-width:38ch}
-a.code-link{color:var(--ink);font-style:italic;font-weight:400;font-size:inherit;text-decoration:none;background:var(--mark);padding:0 .15em;margin-left:.5em;display:inline-block}
-a.code-link:hover{opacity:.85;transform:none}
+a.code-link{position:relative;z-index:0;color:var(--ink);text-decoration:none;font-style:italic;font-weight:400;font-size:inherit;margin-left:.5em}
+a.code-link::before{content:"";position:absolute;inset:0 -0.25em;z-index:-1;background:repeating-linear-gradient(to bottom,rgb(200 245 58 / 0.95) 0 2px,rgb(200 245 58 / 0.65) 2px 3px);filter:url(#marker);transform:rotate(-0.7deg);mix-blend-mode:multiply;top:60%;transition:top 0.25s ease}
+a.code-link:hover::before,a.code-link:focus-visible::before{top:0}
 .tags{list-style:none;padding:0;margin:14px 0 18px;display:flex;flex-wrap:wrap;gap:6px}
 .tags li{font-size:.875rem;padding:4px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
 .chip-btn{min-height:44px;padding:0 16px;border-radius:999px;border:1.5px solid var(--ink);background:var(--ground);color:var(--ink);font:500 .95rem var(--display);cursor:pointer}
@@ -73,4 +74,9 @@ a.code-link:hover{opacity:.85;transform:none}
 #hex-readout{min-height:3.2em;margin:10px 2px 0;font-size:.98rem}
 
 #contact .ctas{margin-top:18px}
+#contact .ctas .code-link{font-size:1.25em}
+.contact-wrap{display:flex;gap:2rem;align-items:flex-start}
+.contact-text{flex:1}
+.headshot{width:140px;height:auto;object-fit:cover;flex-shrink:0}
+@media (max-width:500px){.contact-wrap{flex-direction:column}.headshot{width:100px;height:100px}}
 footer{color:var(--muted);font-size:.9rem;padding:36px 0 12px}
