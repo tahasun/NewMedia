@@ -78,5 +78,5 @@ a.code-link:hover::before,a.code-link:focus-visible::before{top:0}
 .contact-wrap{display:flex;gap:2rem;align-items:flex-start}
 .contact-text{flex:1}
 .headshot{width:140px;height:auto;object-fit:cover;flex-shrink:0}
-@media (max-width:500px){.contact-wrap{flex-direction:column}.headshot{width:100px;height:100px}}
+@media (max-width:500px){.contact-wrap{flex-direction:column;}.headshot{width:120px;height:auto}.contact-text{width:100%}#contact .ctas{display:flex;gap:8px;}}
 footer{color:var(--muted);font-size:.9rem;padding:36px 0 12px}
